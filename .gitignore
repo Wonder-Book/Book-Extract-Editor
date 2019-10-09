@@ -3,3 +3,5 @@ mine/
 node_modules/
 
 lib/
+
+dist/
