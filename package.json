@@ -6,7 +6,7 @@
     "scripts": {
         "bsb:watch": "bsb -clean-world -make-world -w",
         "bsb:build": "bsb -clean-world -make-world",
-        "webpack:dev": "NODE_ENV=development  webpack --config webpack.config.js"
+        "webpack:dev": "NODE_ENV=development webpack --config webpack.config.js"
     },
     "devDependencies": {
         "bs-platform": "^5.2.0",
@@ -16,6 +16,6 @@
     "dependencies": {
         "reason-react": "^0.7.0",
         "reductive": "^2.0.0",
-        "tiny-wonder-engine": "^0.0.2"
+        "tiny-wonder-engine": "^0.0.4"
     }
 }
