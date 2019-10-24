@@ -16,6 +16,6 @@
     "dependencies": {
         "reason-react": "^0.7.0",
         "reductive": "^2.0.0",
-        "tiny-wonder-engine": "^0.0.4"
+        "extract-tiny-wonder-engine": "^0.0.6"
     }
 }

@@ -16,7 +16,7 @@
     "bs-dependencies": [
         "reason-react",
         "reductive",
-        "tiny-wonder-engine"
+        "extract-tiny-wonder-engine"
     ],
     "bs-dev-dependencies": [],
     "package-specs": [

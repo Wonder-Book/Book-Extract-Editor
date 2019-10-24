@@ -10,9 +10,10 @@ module Method = {
   let start = state => {
     let rec _loop = () =>
       DomExtend.requestAnimationFrame(time => {
-        DataEngine.unsafeGetState()
-        |> DirectorEngine.loopBody
-        |> DataEngine.setState
+        DataAPIEngine.unsafeGetState()
+        |> DirectorAPIEngine.loopBody
+        |> Result.tap(state => state |> DataAPIEngine.setState)
+        |> Result.getSuccessValue(Error.throwError)
         |> ignore;
 
         _loop();
