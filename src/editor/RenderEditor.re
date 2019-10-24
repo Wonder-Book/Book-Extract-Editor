@@ -1,5 +1,7 @@
 open DataEditorType;
 
+open RenderType;
+
 let createData = () => {loopId: None};
 
 let unsafeGetLoopId = state => state.renderData.loopId |> Option.unsafeGet;

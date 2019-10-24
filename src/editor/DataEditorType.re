@@ -1,5 +1,3 @@
-type renderData = {loopId: option(int)};
-
-type state = {renderData};
+type state = {renderData: RenderType.renderData};
 
 type stateData = {mutable state};

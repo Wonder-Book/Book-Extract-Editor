@@ -18,6 +18,7 @@ module Method = {
 
         _loop();
       })
+      |> DomExtend.intToLoopId
       |> RenderEditor.setLoopId(_, DataEditor.getState())
       |> DataEditor.setState
       |> ignore;
