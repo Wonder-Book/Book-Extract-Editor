@@ -1,6 +1,6 @@
-open DataEditorType;
+open PersistentDataType;
 
-let _createState = () => {renderData: RenderEditor.createData()};
+let _createState = () => {renderData: RenderPst.createData()};
 
 let stateData = {state: _createState()};
 

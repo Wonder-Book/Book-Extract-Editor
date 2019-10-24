@@ -1,6 +1,6 @@
-open DataEditorType;
+open PersistentDataType;
 
-open RenderType;
+open RenderPstType;
 
 let createData = () => {loopId: None};
 

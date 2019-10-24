@@ -19,8 +19,8 @@ module Method = {
         _loop();
       })
       |> DomExtend.intToLoopId
-      |> RenderEditor.setLoopId(_, DataEditor.getState())
-      |> DataEditor.setState
+      |> RenderPst.setLoopId(_, PersistentData.getState())
+      |> PersistentData.setState
       |> ignore;
 
     _loop();
@@ -30,7 +30,7 @@ module Method = {
 
   let stop = state => {
     DomExtend.cancelAnimationFrame(
-      RenderEditor.unsafeGetLoopId(DataEditor.getState()),
+      RenderPst.unsafeGetLoopId(PersistentData.getState()),
     );
 
     {...state, isStart: false};
